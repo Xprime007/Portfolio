@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Playfair Display", serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative; /*placed in its normal position*/
+
+    
+}
+#navbar{
+    display: flex; /* to make child element into inline*/
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between; /*horizontally child*/
+    align-items: center; /* vertically child*/
+}
+#logo{
+    width: 130px;
+}
+.listitem{
+    list-style: none; /* remove the styling of liat item*/
+    display: inline;
+    margin: 10px 20px;
+    font-weight: 700;
+}
+li:hover{
+    color: red;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+#title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+#title h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#lastname{
+    color: orange;
+}
+#title a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+#images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+
+}
+.imageGroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 2s;
+}
+#images:hover #shape{
+    bottom: 70px;
+}
+#images:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 14% 8px 0 8%;
+}
+#heading{
+    text-align: center;
+}
+#heading h2{
+    font-size: 30px;
+}
+#heading p{
+    font-size: 20px;
+    color: g
+    green;
+}
+#content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+#content_img img{
+    width: 80%;
+}
+#content_details{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+}
+#information{
+    margin-top: 2rem;
+
+}
+.info{
+    margin-top: 1rem;
+}
+.info span{
+    margin-left: 1rem;
+}
